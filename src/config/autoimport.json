@@ -1,0 +1,21 @@
+[{
+  "import": "angularUIRouter",   
+  "from": "angular-ui-router",
+  "search": "ui-router"
+}, {
+  "import": "{Component}",   
+  "from": "core",
+  "search": "@Component\\({"
+}, {
+  "import": "{RouteConfig}",   
+  "from": "core",
+  "search": "@RouteConfig\\('"
+}, {
+  "import": "{Injectable}",   
+  "from": "core",
+  "search": "@Injectable\\(\\)"
+}, {
+  "import": "{Inject}",   
+  "from": "core",
+  "search": "@Inject\\('"
+}]
