@@ -1,0 +1,71 @@
+{
+  "extends": "eslint:recommended",
+  // generator: http://rapilabs.github.io/eslintrc-generator
+  "parser": "babel-eslint",
+  "env": {
+    "node": true,
+    "es6": true,
+    "amd": true,
+    "mocha": true
+  },
+  "rules": {
+    "strict": 0, 
+    // Possible Errors
+    "no-extra-semi": 1,            // disallow unnecessary semicolons
+    "no-inner-declarations": 2,    // disallow function or variable declarations in nested blocks
+
+    // Best Practices
+    "curly": 2,                 // specify curly brace conventions for all control statements
+    "no-eval": 2,               // disallow use of eval()
+    "no-extend-native": 2,      // disallow adding to native types
+    "no-new-wrappers": 2,       // disallows creating new instances of String, Number, and Boolean
+    "no-with": 2,               // disallow use of the with statement
+"no-unused-vars": 0, 
+    // Variables
+    "no-undef": 0,                   // disallow use of undeclared variables unless mentioned in a /*global */ block
+
+    // Stylistic Issues
+    "object-curly-spacing": [2, "never"],  // require or disallow padding inside curly braces (off by default)
+    "semi": 2,                             // require or disallow use of semicolons instead of ASI
+    "quotes": [2, "single"],
+    "array-bracket-spacing": 2,
+    "brace-style": 2,
+    # "camelcase": [2,{"properties":"always"}],
+    "comma-spacing": [2,{"before":false,"after":true}],
+    "comma-style": 2,
+    "computed-property-spacing": 2,
+    "eol-last": 2,
+  #  "indent": ["error", 2],
+    "key-spacing": 2,
+    "max-nested-callbacks": [2,6],
+    "new-cap": 0,
+    "new-parens": 2,
+    "no-array-constructor": 2,
+    "no-lonely-if": 2,
+    "no-mixed-spaces-and-tabs": 2,
+    "no-multiple-empty-lines": 2,
+    "no-new-object": 2,
+    "no-spaced-func": 2,
+    "no-trailing-spaces": 2,
+    "no-unneeded-ternary": 2,
+    "operator-assignment": 2,
+    "padded-blocks": [2, "never"],
+    "id-match": 2,
+    "semi-spacing": 2,
+    "keyword-spacing": 2,
+    "space-before-blocks": 2,
+    "space-before-function-paren": 2,
+    "space-in-parens": 2,
+    "space-infix-ops": 2,
+    "space-unary-ops": 2,
+    "spaced-comment": 2,
+    "wrap-regex": 2,
+    "quote-props": [2, "as-needed"],
+    "no-console": ["error", { allow: ["warn",  "error", "log"] }], 
+   
+    //ES6
+    "prefer-const": 2,
+    "no-extra-boolean-cast": 0,
+    "yield-star-spacing": [2, {"before": false, "after": true}]               // Enforce spacing around the * in yield* expressions
+  }
+}
