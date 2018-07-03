@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "export NODE_ENV=development && webpack-dev-server  --inline  --devtool=source-map --progress --colors --port=9000 --content-base src",
     "test": "export NODE_ENV=test && karma start",
-    "build": "export NODE_ENV=production && node node_modules/.bin/webpack && cp src/index.html dist/index.html", 
-    "lint": "./node_modules/.bin/eslint ."
+    "build": "export NODE_ENV=production && node node_modules/.bin/webpack && cp src/index.html dist/index.html",
+    "lint": "./node_modules/.bin/eslint .",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [
     "angular",
@@ -76,6 +78,8 @@
     "node-sass": "^3.3.3",
     "sass-loader": "^3.0.0",
     "scss-loader": "0.0.1",
-    "style-loader": "^0.12.4"
-  }
+    "style-loader": "^0.12.4",
+    "snyk": "^1.88.0"
+  },
+  "snyk": true
 }
