@@ -1,0 +1,19 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.3
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:lodash:20180130':
+    - jscs > lodash:
+        patched: '2019-04-14T02:08:51.204Z'
+    - jscs > xmlbuilder > lodash:
+        patched: '2019-04-14T02:08:51.204Z'
+    - ngrequire-webpack-plugin > ngrequire > lodash:
+        patched: '2019-04-14T02:08:51.204Z'
+    - jscs > jscs-jsdoc > jsdoctypeparser > lodash:
+        patched: '2019-04-14T02:08:51.204Z'
+  'npm:minimatch:20160620':
+    - ngrequire-webpack-plugin > ngrequire > globule > glob > minimatch:
+        patched: '2019-04-14T02:08:51.204Z'
+    - ngrequire-webpack-plugin > ngrequire > globule > minimatch:
+        patched: '2019-04-14T02:08:51.204Z'
